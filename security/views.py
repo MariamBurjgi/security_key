@@ -9,8 +9,9 @@ from django.contrib.auth.models import User
 from .models import Channel
 from .serializers import ChannelSerializer
 
-BASE = 2
-MODULUS = int('A4E02E7144D7189965AA9901013921BD721AE84072B4F41A3ED4AD3F5DC1C403', 16)
+
+BASE = settings.BASE
+MODULUS = settings.MODULUS
 
 class ChannelViewSet(viewsets.ModelViewSet):
     queryset = Channel.objects.all()

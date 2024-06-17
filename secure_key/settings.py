@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+BASE = 2
+MODULUS = int('A4E02E7144D7189965AA9901013921BD721AE84072B4F41A3ED4AD3F5DC1C403', 16)
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
